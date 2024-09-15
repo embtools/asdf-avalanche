@@ -42,9 +42,20 @@ download_release() {
 	filename="$2"
 
 	# TODO: Adapt the release URL convention for avalanche-cli
-	url="$GH_REPO/archive/v${version}.tar.gz"
+	#url="$GH_REPO/archive/v${version}.tar.gz"
+	arch=""
+	case $(uname -m) in
+    		i386 | i686)   arch="386" ;;
+    		x86_64) arch="amd64" ;;
+    		arm)    dpkg --print-arch | grep -q "arm64" && arch="arm64" || arch="arm" ;;
+	esac
+	os="linux"
+	if [[ -n "$(uname -a | grep Darwin)" ]]; then
+		os="darwin"
+	fi
+	url="$GH_REPO/releases/download/v${version}/avalanche-cli_${version}_${os}_${arch}.tar.gz"
 
-	echo "* Downloading $TOOL_NAME release $version..."
+	echo "* Downloading $TOOL_NAME release $version"
 	curl "${curl_opts[@]}" -o "$filename" -C - "$url" || fail "Could not download $url"
 }
 
