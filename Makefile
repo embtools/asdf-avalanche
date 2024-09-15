@@ -13,13 +13,16 @@ download-clean:
 download:
 	bin/download
 
+install-clean:
+	rm -rf ./data/install/*
+
 install:
 	bin/install
 
 uninstall:
 	bin/uninstall
 
-clean: download-clean
+clean: download-clean install-clean
 
 all: clean download install
 

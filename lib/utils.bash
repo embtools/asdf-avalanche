@@ -4,7 +4,7 @@ set -euo pipefail
 
 # TODO: Ensure this is the correct GitHub homepage where releases can be downloaded for avalanche-cli.
 GH_REPO="https://github.com/ava-labs/avalanche-cli"
-TOOL_NAME="avalanche-cli"
+TOOL_NAME="avalanche"
 TOOL_TEST="avalanche --version"
 
 fail() {
