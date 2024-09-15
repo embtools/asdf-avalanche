@@ -34,15 +34,15 @@ avalanche:
 
 ```shell
 # Show all installable versions
-asdf list-all avalanche-cli
+asdf list-all avalanche
 
 # Install specific version
-asdf install avalanche-cli latest
+asdf install avalanche latest
 
 # Set a version globally (on your ~/.tool-versions file)
-asdf global avalanche-cli latest
+asdf global avalanche latest
 
-# Now avalanche-cli commands are available
+# Now avalanche commands are available
 avalanche --version
 ```
 
