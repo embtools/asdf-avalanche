@@ -1,8 +1,8 @@
 <div align="center">
 
-# asdf-avalanche-cli [![Build](https://github.com/test/asdf-avalanche-cli/actions/workflows/build.yml/badge.svg)](https://github.com/test/asdf-avalanche-cli/actions/workflows/build.yml) [![Lint](https://github.com/test/asdf-avalanche-cli/actions/workflows/lint.yml/badge.svg)](https://github.com/test/asdf-avalanche-cli/actions/workflows/lint.yml)
+# asdf-avalanche [![Build](https://github.com/embtools/asdf-avalanche/actions/workflows/build.yml/badge.svg)](https://github.com/embtools/asdf-avalanche/actions/workflows/build.yml) [![Lint](https://github.com/embtools/asdf-avalanche/actions/workflows/lint.yml/badge.svg)](https://github.com/embtools/asdf-avalanche/actions/workflows/lint.yml)
 
-[avalanche-cli](https://github.com/ava-labs/avalanche-cli) plugin for the [asdf version manager](https://asdf-vm.com).
+[avalanche](https://github.com/ava-labs/avalanche-cli) plugin for the [asdf version manager](https://asdf-vm.com).
 
 </div>
 
@@ -25,12 +25,12 @@
 Plugin:
 
 ```shell
-asdf plugin add avalanche-cli
+asdf plugin add avalanche
 # or
-asdf plugin add avalanche-cli https://github.com/test/asdf-avalanche-cli.git
+asdf plugin add avalanche https://github.com/embtools/asdf-avalanche.git
 ```
 
-avalanche-cli:
+avalanche:
 
 ```shell
 # Show all installable versions
@@ -53,8 +53,8 @@ install & manage versions.
 
 Contributions of any kind welcome! See the [contributing guide](contributing.md).
 
-[Thanks goes to these contributors](https://github.com/test/asdf-avalanche-cli/graphs/contributors)!
+[Thanks goes to these contributors](https://github.com/embtools/asdf-avalanche/graphs/contributors)!
 
 # License
 
-See [LICENSE](LICENSE) © [Marcus Baker](https://github.com/test/)
+See [LICENSE](LICENSE) © [Marcus Baker](https://github.com/embtools/asdf-avalanche/)
