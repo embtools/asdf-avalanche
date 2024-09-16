@@ -47,7 +47,8 @@ download_release() {
 	case $(uname -m) in
     		i386 | i686)   arch="386" ;;
     		x86_64) arch="amd64" ;;
-    		arm)    dpkg --print-arch | grep -q "arm64" && arch="arm64" || arch="arm" ;;
+    		arm64)    arch="arm64" ;;
+		arm) arch="arm" ;;
 	esac
 	os="linux"
 	if [[ -n "$(uname -a | grep Darwin)" ]]; then
